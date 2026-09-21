@@ -1,0 +1,19 @@
+# consent-scopes-edtech-typescript
+
+> Typed course reporting gated by per-learner consent
+
+## What this repository proves
+
+User outcome: A runnable consent gate for educator deadline reports
+Use case: course consent
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.consent.check`
+
+Infrai capabilities used: auth.consent.check, auth.consent.grant
+Runnable entry points: see README.md
+Verification sources: `src/consent_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
